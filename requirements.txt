@@ -1,0 +1,12 @@
+surfplot
+neuromaps
+jupyter
+pandas
+matplotlib
+seaborn
+nibabel
+nilearn
+tqdm
+torch
+gensim
+numpy==1.26.4
