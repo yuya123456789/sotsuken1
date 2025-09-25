@@ -33,7 +33,32 @@ from nilearn.maskers import NiftiLabelsMasker
 
 # fMRI NIfTI を読み込む。
 # 研究室サーバーの物語を聞いた時のデータを読み込むようにするためにはここをいじる。
-func_fn = '/home/sudesnac/01_data/20_narrativefMRI/10_ds002245-v.1.0.3_Hasson/sub-001/func/sub-001_task-pieman_run-1_bold.nii.gz'
+#func_fn = '/home/sudesnac/01_data/20_narrativefMRI/10_ds002245-v.1.0.3_Hasson/sub-001/func/sub-001_task-pieman_run-1_bold.nii.gz'
+func_fn_base = '/home/sudesnac/01_data/20_narrativefMRI/10_ds002245-v.1.0.3_Hasson/'
+
+func_fn_par = func_fn_base+'participants.tsv'
+
+
+
+sub = input("被験者番号を入力")
+
+df = pd.read_csv(func_fn_par, sep="\t")
+value = df.iloc[int(sub) - 1, 3]
+print('被験者が聞いた物語: '+value)
+
+task = input("物語を入力")
+
+
+if int(sub)<10 :
+    sub='00'+sub
+
+elif (int(sub)<100) and (10<=int(sub)) :
+    sub='0'+sub
+
+
+
+func_fn = func_fn_base+'sub-'+sub+'/func/sub-'+sub+'_task-'+task+'_bold.nii.gz'
+
 
 # Schaefer atlas (400 parcels, 17 networks)
 n_parcels = 400
