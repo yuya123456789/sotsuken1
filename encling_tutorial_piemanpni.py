@@ -27,7 +27,7 @@ from nilearn.maskers import NiftiLabelsMasker
 #5
 # fMRI NIfTI ファイル
 #func_fn = '/home/sudesnac/01_data/20_narrativefMRI/10_ds002245-v.1.0.3_Hasson/sub-001/func/sub-001_task-pieman_run-1_bold.nii.gz'
-#func_fn = 'sub-284_task-black_space-MNI152NLin2009cAsym_res-native_desc-clean_bold.nii.gz'
+#func_fn = 'sub-284_task-piemanpni_space-MNI152NLin2009cAsym_res-native_desc-clean_bold.nii.gz'
 
 func_fn_b = '/home/sudesnac/01_data/20_narrativefMRI/10_ds002245-v.1.0.3_Hasson/'
 
@@ -117,7 +117,7 @@ model = gensim.downloader.load(model_name)
 # Load in transcript CSV file
 import pickle
 
-transcript_f = 'black_transcript.csv'
+transcript_f = 'piemanpni_transcript.csv'
 transcript_w2v = pd.read_csv(transcript_f)
 
 # Convert words to lowercase
@@ -138,13 +138,13 @@ print(f'{(transcript_w2v.embedding.isna()).sum()} words not found:')
 print(transcript_w2v.word[transcript_w2v.embedding.isna()].value_counts())
 
 # Save transcript with embeddings using pickle
-with open('black_w2v.pkl', 'wb') as f:
+with open('piemanpni_w2v.pkl', 'wb') as f:
     pickle.dump(transcript_w2v, f)
 
 
 #10
 # Reload transcript with embeddings if already generated
-transcript_f = 'black_w2v.pkl'
+transcript_f = 'piemanpni_w2v.pkl'
 if exists(transcript_f):
     with open(transcript_f, 'rb') as f:
         transcript_w2v = pickle.load(f)
@@ -183,7 +183,7 @@ print(f"Using {device} device")
 
 #13
 # Reload in transcript CSV file
-transcript_f = 'black_transcript.csv'
+transcript_f = 'piemanpni_transcript.csv'
 transcript_gpt2 = pd.read_csv(transcript_f)
 
 # Insert explicit index column for reference
@@ -306,13 +306,13 @@ print(f"Top-1 accuracy: {(transcript_gpt2['rank'] == 0).mean():.3f}")
 print(f"Top-10 accuracy: {(transcript_gpt2['rank'] < 10).mean():.3f}")
 
 # Save transcript with embeddings using pickle
-with open('black_gpt2.pkl', 'wb') as f:
+with open('piemanpni_gpt2.pkl', 'wb') as f:
     pickle.dump(transcript_gpt2, f)
 
 
 #17
 # Reload transcript with embeddings if already generated
-transcript_f = 'black_gpt2.pkl'
+transcript_f = 'piemanpni_gpt2.pkl'
 if exists(transcript_f):
     with open(transcript_f, 'rb') as f:
         transcript_gpt2 = pickle.load(f)
