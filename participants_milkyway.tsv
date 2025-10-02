@@ -1,0 +1,54 @@
+participant_id	age	sex	task	condition	comprehension
+sub-023	27,28,28	F,F,F	pieman,prettymouth,milkyway	n/a,affair,vodka	n/a,0.889,1.0
+sub-030	20,21,21	F,F,F	pieman,prettymouth,milkyway	n/a,paranoia,vodka	n/a,0.963,0.893
+sub-032	21,22,22	M,M,M	pieman,prettymouth,milkyway	n/a,affair,vodka	n/a,0.963,0.964
+sub-034	18,19,19,19,19	M,M,M,M,M	pieman,prettymouth,milkyway,notthefallintact,notthefalllongscram	n/a,affair,original,intact-longscram,intact-longscram	n/a,1.0,1.0,n/a,n/a
+sub-038	33,34,34	F,F,F	pieman,prettymouth,milkyway	n/a,affair,vodka	n/a,1.0,0.893
+sub-052	20,20,20,21,21	F,F,F,F,F	pieman,tunnel,lucy,prettymouth,milkyway	n/a,n/a,n/a,paranoia,vodka	n/a,n/a,n/a,0.926,0.929
+sub-079	19,19,19	M,M,M	pieman,prettymouth,milkyway	n/a,paranoia,vodka	n/a,0.963,1.0
+sub-081	21,21,21	M,M,M	pieman,prettymouth,milkyway	n/a,paranoia,original	n/a,1.0,1.0
+sub-083	21,21	F,F	prettymouth,milkyway	affair,original	1.0,0.964
+sub-086	20,20	F,F	prettymouth,milkyway	affair,vodka	1.0,0.929
+sub-087	19,19	F,F	prettymouth,milkyway	affair,vodka	1.0,0.893
+sub-088	19,19	M,M	prettymouth,milkyway	affair,vodka	0.852,0.893
+sub-089	19,19,20,20,22	M,M,M,M,M	prettymouth,milkyway,notthefallintact,notthefallshortscram,schema	affair,vodka,intact-shortscram,intact-shortscram,n/a	0.926,0.893,n/a,n/a,n/a
+sub-090	20,20	F,F	prettymouth,milkyway	affair,vodka	0.963,0.929
+sub-091	21,21	M,M	prettymouth,milkyway	affair,original	1.0,1.0
+sub-093	20,20	F,F	prettymouth,milkyway	affair,original	0.926,1.0
+sub-095	20,20,20,20,22,22	M,M,M,M,M,M	prettymouth,milkyway,notthefallintact,notthefallshortscram,shapessocial,shapesphysical	affair,original,intact-shortscram,intact-shortscram,movie-physical-social,movie-physical-social	0.963,0.821,n/a,n/a,n/a,n/a
+sub-096	19,19,19,19	M,M,M,M	prettymouth,milkyway,notthefallintact,notthefallshortscram	affair,original,intact-shortscram,intact-shortscram	1.0,0.964,n/a,n/a
+sub-097	19,19	M,M	prettymouth,milkyway	affair,vodka	0.815,0.929
+sub-098	18,18	M,M	prettymouth,milkyway	paranoia,vodka	0.889,0.893
+sub-099	18,18	F,F	prettymouth,milkyway	paranoia,original	0.926,0.893
+sub-100	18,18	M,M	prettymouth,milkyway	paranoia,original	0.889,0.964
+sub-101	22,22	M,M	prettymouth,milkyway	paranoia,original	0.926,0.821
+sub-102	27,27	M,M	prettymouth,milkyway	paranoia,vodka	0.963,0.857
+sub-103	19,19	F,F	prettymouth,milkyway	paranoia,vodka	0.889,0.821
+sub-104	18,18	F,F	prettymouth,milkyway	paranoia,original	0.963,1.0
+sub-105	22,22	F,F	prettymouth,milkyway	paranoia,original	0.926,0.857
+sub-106	22,22,22,22,22	M,M,M,M,M	prettymouth,milkyway,slumlordreach,notthefallintact,notthefalllongscram	paranoia,original,n/a,intact-longscram,intact-longscram	0.926,0.893,0.545,n/a,n/a
+sub-107	19,19	F,F	prettymouth,milkyway	paranoia,vodka	1.0,0.964
+sub-108	22,22	F,F	prettymouth,milkyway	paranoia,original	0.852,1.0
+sub-109	31,31,33	M,M,M	prettymouth,milkyway,schema	paranoia,vodka,n/a	0.963,0.893,n/a
+sub-110	26,26	M,M	prettymouth,milkyway	paranoia,vodka	0.963,1.0
+sub-111	19,19,19,19,19	M,M,M,M,M	prettymouth,milkyway,slumlordreach,notthefallintact,notthefalllongscram	paranoia,original,n/a,intact-longscram,intact-longscram	0.852,1.0,0.598,n/a,n/a
+sub-112	18	F	milkyway	original	0.857
+sub-113	19	F	milkyway	original	0.929
+sub-114	21	F	milkyway	original	1.0
+sub-115	24,23,23	F,F,F	milkyway,shapessocial,shapesphysical	synonyms,physical-social-movie,physical-social-movie	n/a,n/a,n/a
+sub-116	20	F	milkyway	synonyms	
+sub-117	18	M	milkyway	synonyms	
+sub-118	19	M	milkyway	synonyms	
+sub-119	21	M	milkyway	synonyms	
+sub-120	20	M	milkyway	synonyms	
+sub-121	19	F	milkyway	synonyms	
+sub-122	20	F	milkyway	synonyms	
+sub-123	19	F	milkyway	synonyms	
+sub-124	20	M	milkyway	synonyms	
+sub-125	19	F	milkyway	synonyms	
+sub-126	21	F	milkyway	synonyms	
+sub-127	31,30,30,32,32,32,32	F,F,F,F,F,F,F	milkyway,shapessocial,shapesphysical,piemanpni,bronx,forgot,black	synonyms,movie-physical-social,movie-physical-social,n/a,n/a,n/a,n/a	n/a,n/a,n/a,0.683,0.44,0.44,0.76
+sub-128	19	M	milkyway	synonyms	
+sub-129	20	M	milkyway	synonyms	
+sub-130	19	F	milkyway	synonyms	
+sub-131	22,23	M,M	milkyway,21styear	synonyms,n/a	n/a,1.0
